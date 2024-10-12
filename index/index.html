@@ -3,15 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Page</title>
+    <title>BizNest</title>
     <link rel="stylesheet" href="istyle.css">
+    <link rel="icon" type="image/x-icon" href="images/logo (2).png">
 </head>
 <body>
-    <ul>
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>
+    <header>
+        <div class="logo"><img id="logoimg" src="images/logo (2).png" alt=""></div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Categories</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="search">
+            <input type="text" placeholder="Search for services or products...">
+            <button>Search</button>
+        </section>
+
+        <section class="categories">
+            <h2>Categories</h2>
+            <div class="category-list">
+                <div class="category-item" id="Restaurants">Restaurants</div>
+                <div class="category-item" id="Shopping">Shopping</div>
+                <div class="category-item" id="HealthBeauty">Health & Beauty</div>
+                <div class="category-item" id="Automotive">Automotive</div>
+                <div class="category-item" id="HomeService">Home Services</div>
+                <div class="category-item" id="Entertainment">Entertainment</div>
+            </div>
+        </section>
+
+        <section class="featured">
+            <h2>Featured Listings</h2>
+            <div class="listing">
+                <h3>ABC Restaurant</h3>
+                <p>Best dining experience in town!</p>
+            </div>
+            <div class="listing">
+                <h3>XYZ Shopping Center</h3>
+                <p>Your one-stop shop for everything!</p>
+            </div>
+            <div class="listing">
+                <h3>HealthPlus Clinic</h3>
+                <p>Professional healthcare services.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>BizNest connects customers with local businesses, making it easy to find the best services in your area.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Categories</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 BizNest. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
