@@ -2,11 +2,13 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
-  color: #333;
+  color: #ffffff;
+  background-color: black;
 }
 
 header {
-  background-color: #6366f1;
+  /* background-color: #6366f1; */
+  background: linear-gradient(135deg, #ff00ff 0%, #7700ff 100%);
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -34,14 +36,9 @@ nav ul li {
   margin-left: 20px;
 }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
+.nav-button{
+  background: transparent;
+  border: transparent;
 }
 
 .search {
@@ -107,8 +104,32 @@ nav ul li a:hover {
 }
 
 #Shopping{
-  background-image: url("images/shopping\(2\).jpg");
-  background-size: 180px;
+  background-image: url("images/shopping.webp");
+  background-size: 200px;
+  
+}
+
+#HealthBeauty{
+  background-image: url("images/Beauty.webp");
+  background-size: 200px;
+}
+
+#Automotive{
+  background-image: url("images/automotive.webp");
+  background-size: 250px;
+  background-position-x: -60px;
+}
+
+#HomeService{
+  background-image: url("images/homeService.webp");
+  background-size: 150px;
+  background-position-x: -20px;
+}
+
+#Entertainment{
+  background-image: url("images/entertainment.webp");
+  background-size: 200px;
+  background-position: center;
 }
 
 .featured {
@@ -116,15 +137,21 @@ nav ul li a:hover {
 }
 
 .listing {
-  background-color: white;
+  /* background-color: white; */
+  
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 15px;
   margin: 10px 0;
+  transition: transform 0.2s;
+}
+
+.listing:hover{
+  transform: scale(1.025);
 }
 
 footer {
-  background-color: #333;
+  background: linear-gradient(135deg, #ff00ff 0%, #7700ff 100%);
   color: white;
   padding: 20px;
 }
@@ -141,7 +168,7 @@ footer {
 }
 
 .footer-section h3 {
-  color: #6366f1;
+  color: #000000;
 }
 
 .footer-section ul {
